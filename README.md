@@ -12,7 +12,7 @@ docker pull sharescape/hasura-data-dictionary
 - `HASURA_GRAPHQL_SERVER_HOST`: The Hasura endpoint to pass to the data-dictionary's build-time env. Required.
 - `HASURA_GRAPHQL_ADMIN_SECRET`: Required.
 - `DATA_DICTIONARY_PORT`: Port where the data-dictionary UI is hosted on(default 3000). Optional
-- `DATA_DICTIONARY_BASE_PATH`: For reverse proxies(optional)
+- `DATA_DICTIONARY_BASE_PATH`: For reverse proxies(optional). (not-supported in this release)
 
 ### Using environment variables
 

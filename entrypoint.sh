@@ -22,17 +22,18 @@ else
 fi
 
 
-cat > next.config.js <<- JAVASCRIPT
-module.exports = {
-  basePath: '$DATA_DICTIONARY_BASE_PATH',
-  typescript: {
-    ignoreBuildErrors: true
-  },
-  serverRuntimeConfig: {
-    PROJECT_ROOT: __dirname
-  }
-}
-JAVASCRIPT
+# Changing nextJs basepath causes the program to crash
+#cat > next.config.js <<- JAVASCRIPT
+#module.exports = {
+  #basePath: '$DATA_DICTIONARY_BASE_PATH',
+  #typescript: {
+    #ignoreBuildErrors: true
+  #},
+  #serverRuntimeConfig: {
+    #PROJECT_ROOT: __dirname
+  #}
+#}
+#JAVASCRIPT
 
 printf "$ENVSTR" > .env
 
