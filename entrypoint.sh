@@ -23,6 +23,7 @@ fi
 
 
 # Changing nextJs basepath causes the program to crash
+# https://github.com/hasura/data-dictionary/issues/6
 #cat > next.config.js <<- JAVASCRIPT
 #module.exports = {
   #basePath: '$DATA_DICTIONARY_BASE_PATH',
