@@ -3,10 +3,10 @@ set -e
 
 env_missing() { echo "missing $* environment variable"; exit 1; }
 
-if [ -n "$HASURA_GRAPHQL_SERVER_HOST" ]; then
-  ENVSTR="NEXT_PUBLIC_HASURA_URL=$HASURA_GRAPHQL_SERVER_HOST"
+if [ -n "$DATA_DICTIONARY_API_HOST" ]; then
+  ENVSTR="NEXT_PUBLIC_HASURA_URL=$DATA_DICTIONARY_API_HOST"
 else
-  env_missing "HASURA_GRAPHQL_SERVER_HOST"
+  env_missing "DATA_DICTIONARY_API_HOST"
 fi
 
 if [ -n "$HASURA_GRAPHQL_ADMIN_SECRET" ]; then
